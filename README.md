@@ -40,8 +40,48 @@ Steps include:
 
 ---
 
+
 ### **5️⃣ Saving the Model**
 The trained model and scaler are saved using:
-```python
 pickle.dump(model, open("model.pkl", "wb"))
 pickle.dump(scaler, open("scaler.pkl", "wb"))
+
+
+6️⃣ Deployment Using Streamlit
+
+A user-friendly web interface is created where users can enter:
+
+Annual Income
+
+Credit Score
+
+The app then predicts:
+✔ Loan Approved
+❌ Loan Rejected
+
+The app is run using:
+streamlit run app.py
+
+
+In Google Colab, ngrok is used to expose the app online.
+🛠️ Tech Stack
+   Python
+   NumPy
+   Pandas
+   Scikit-Learn
+   Streamlit
+   Ngrok
+  Matplotlib
+
+📊 Model Accuracy
+Final test accuracy: ~90%
+(Varies based on random train-test split)
+
+✨ Features
+End-to-end ML pipeline
+Clean and simple UI
+Real-time predictions
+Lightweight and easy to deploy
+Beginner-friendly workflow
+
+
